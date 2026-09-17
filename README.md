@@ -99,5 +99,5 @@ pygame
 * Pygame
 
 ##  License
-
+By eDDie
 This project is for educational and personal use.
