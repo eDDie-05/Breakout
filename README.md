@@ -1,103 +1,33 @@
-#  Breakout Game — Python
+# Breakout — Python
 
-A simple **Breakout arcade game** built with Python and Pygame.
+A Breakout-style arcade game built with Python and Pygame. Control a paddle to bounce a ball and clear the bricks.
 
-##  About the Game
+## Features
+- Player-controlled paddle
+- Ball movement and wall/paddle interactions
+- Brick field and collision handling
+- Score tracking
 
-The goal is to control the paddle and bounce the ball to destroy all the bricks.
+## Requirements
+- Python 3.9 or newer
+- Pygame
 
-### Features
-
-*  Player-controlled paddle
-*  Bouncing ball
-*  Destructible bricks
-*  Score system
-*  Lives system
-*  Win and game-over conditions
-*  Keyboard controls
-
-##  Requirements
-
-* Python 3
-* Pygame
-
-##  Installation
-
-Install Pygame using:
-
+## Run locally
 ```bash
-python3 -m pip install pygame
+python -m venv .venv
+# macOS / Linux
+source .venv/bin/activate
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+python -m pip install pygame
+python breakout.py
 ```
 
-Check that it was installed:
+## Controls
+Use the left and right arrow keys to move the paddle. Use the Space key if the game prompts you to start or restart.
 
-```bash
-python3 -m pygame
-```
+## Project files
+- `breakout.py` — game implementation
 
-##  How to Run
-
-Go to the folder containing the game:
-
-```bash
-cd path/to/breakout
-```
-
-Then run:
-
-```bash
-python3 main.py
-```
-
-If the main file has a different name, for example `breakout.py`:
-
-```bash
-python3 breakout.py
-```
-
-##  Controls
-
-| Key   | Action               |
-| ----- | -------------------- |
-| ←     | Move paddle left     |
-| →     | Move paddle right    |
-| Space | Start / restart game |
-| Esc   | Quit game            |
-
-##  Project Structure
-
-```text
-breakout/
-│
-├── main.py
-├── README.md
-├── assets/
-│   ├── images/
-│   └── sounds/
-└── requirements.txt
-```
-
-##  requirements.txt
-
-```text
-pygame
-```
-
-##  Future Improvements
-
-* Multiple levels
-* Different brick types
-* Power-ups
-* Sound effects
-* Background music
-* High-score saving
-* Improved graphics
-
-##  Built With
-
-* Python
-* Pygame
-
-##  License
-By eDDie
-This project is for educational and personal use.
+## Current scope
+This is a compact arcade-game exercise. Automated gameplay tests, sound settings and persistent leaderboards are not included in the documented scope.
